@@ -36,10 +36,8 @@ body {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  max-width: 640px;
-  /* margin: 2rem auto; */
   background-color: var(--color-bg);
-  height: 86%;
+  min-height: 86%;
   border-radius: 1.6rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   width: 800px;
@@ -64,7 +62,7 @@ body {
 }
 
 hr {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 .tasks {
@@ -278,5 +276,66 @@ input:focus {
     transform: scale(0);
     height: 0;
     opacity: 0;
+  }
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+
+  #app {
+    min-height: 100%;
+    border-radius: 0rem;
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 59.5%;
+  }
+
+  #app {
+    min-height: 100%;
+    border-radius: 0rem;
+  }
+
+  .create {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .create__textarea {
+    width: 80%;
+    margin-bottom: 1.2rem;
+  }
+
+  .create__actions {
+    flex-direction: row-reverse;
+  }
+
+  .create__actions button {
+    margin: 0 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  html {
+    font-size: 58%;
+  }
+
+  .tasks {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .create__textarea {
+    margin-left: -1.2rem;
   }
 }

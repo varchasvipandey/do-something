@@ -60,3 +60,7 @@ export const deleteCompletedTask = (id: string): void => {
   const updatedTasksList = allTasks.filter((task: Task) => task.id !== id);
   localStorage.setItem(db, JSON.stringify(updatedTasksList));
 };
+
+export const deleteAllTasks = (): void => {
+  localStorage.setItem(db, JSON.stringify([]));
+};

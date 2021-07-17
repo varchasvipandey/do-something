@@ -6,6 +6,7 @@ const events = new Events();
 
 events.focusTextArea();
 events.addTodoTask();
+events.clearAll();
 
 const user = new User(events.completeTodo, events.deleteTodo);
 

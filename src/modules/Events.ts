@@ -8,6 +8,7 @@ import {
   getTodoTasks,
   renderEmptyImage,
   getCompletedTasks,
+  deleteAllTasks,
 } from "../utils";
 import { Task } from "../interfaces";
 import { createTaskCard } from "../utils/createElem";
@@ -113,5 +114,28 @@ export class Events {
   public addTodoTask = (): void => {
     this.domElements.addButton?.addEventListener("click", this.submitTask);
     document.addEventListener("keydown", this.submitTask);
+  };
+
+  private deleteAllTasks = (): void => {
+    deleteAllTasks();
+    this.domElements.todoSection.innerHTML = "";
+    this.domElements.completedSection.innerHTML = "";
+
+    // render image
+    renderEmptyImage(this.domElements.todoSection, noTodoImg, "empty-todo");
+
+    // render empty images
+    renderEmptyImage(
+      this.domElements.completedSection,
+      noCompletedImg,
+      "empty-completed"
+    );
+  };
+
+  public clearAll = (): void => {
+    this.domElements.clearButton?.addEventListener(
+      "click",
+      this.deleteAllTasks
+    );
   };
 }
