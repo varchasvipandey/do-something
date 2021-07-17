@@ -6,12 +6,12 @@
 
 <br/>
 
-This is my first application using TypeScript. While learning TS and experimenting different features, I decided to take challenge to complete one very basic application using TS in just an hour. But, later I decided to do it in 2 hours because I knew I am going to be slow with TS.
+This is my first application using TypeScript. While learning TS and experimenting different features, I decided to take a challenge to complete one very basic application using TS in just an hour. But, later I decided to do it in 2 hours because I knew I am going to be slow with TS.
 
 It took me 2 hours and some more minutes to write README.md file. I made this very basic todo application for desktop (Yes, you can use it on phones but for the best experience, prefer landscape devices). SUPER BASIC!
 Wasted more time on the UI which I could have given to the logic to make it better. But that is okay!
 
-I have used Vite in this project is the most optimized build tool out there! (For me at least 😉). I was able to seamlessly create a TS project and trust me, the build is super fast! 🚀 
+I have used Vite in this project which is the most optimized build tool out there! (For me at least 😉). I was able to seamlessly create a TS project and trust me, the build is super fast! 🚀 
 
 Feel free to create PRs and improve the code further. Need some TS geeks to better understand the ideal way of structuring and writing TS application.
 
